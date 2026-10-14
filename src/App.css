@@ -1,0 +1,125 @@
+
+.app {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 25px;
+  background-color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: #5b3a70;
+}
+
+.subtitle {
+  text-align: center;
+  color: #666666;
+}
+
+h2 {
+  color: #5b3a70;
+}
+
+.form-box,
+.records-box {
+  margin-top: 25px;
+  padding: 20px;
+  border: 1px solid #d9cce0;
+  border-radius: 8px;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+form input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #5b3a70;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #3e2850;
+}
+
+.cancel-btn {
+  background-color: #777777;
+}
+
+.edit-btn {
+  margin: 3px;
+  background-color: #287a57;
+}
+
+.delete-btn {
+  margin: 3px;
+  background-color: #b83c46;
+}
+
+.error {
+  grid-column: 1 / -1;
+  color: #b00020;
+  margin: 0;
+}
+
+.table-container {
+  width: 100%;
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+th,
+td {
+  padding: 12px;
+  border: 1px solid #dddddd;
+  text-align: left;
+}
+
+th {
+  background-color: #5b3a70;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f1eaf5;
+}
+
+@media (max-width: 700px) {
+  .app {
+    margin: 10px;
+    padding: 15px;
+  }
+
+  form {
+    grid-template-columns: 1fr;
+  }
+
+  .form-buttons {
+    flex-wrap: wrap;
+  }
+}
